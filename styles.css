@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins */
+    background-color: #fcfcfd;
+    color: #120b0b;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #100202;
+}
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #8d1b73b3), url('https://source.unsplash.com/1600x900/?coding') no-repeat center/cover;
+    color: white;
+    position: relative;
+    animation: fadeIn 2s ease-in;
+}
+
+.headline {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.subheadline {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.web-developer {
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.about-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #8d1b73b3;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 10px; /* corrected margin property */
+}
+
+.skills-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #49083a9b;
+    color: rgb(245, 249, 250);
+}
+
+.skills-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.skills-list div {
+    font-size: 18px;
+    font-weight: 500;
+    animation: fadeInUp 1.5s ease-in; /* adjusted duration */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #49083a9b;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
